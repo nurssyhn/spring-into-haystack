@@ -7,7 +7,8 @@ from haystack_integrations.tools.mcp import MCPTool, StdioServerInfo
 github_mcp_server = StdioServerInfo(
         ## TODO: Add correct params for the Github MCP Server (official or legacy)
         env={
-            "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR GITHUB TOKEN>" # DO NOT ADD IT TO YOUR COMMIT
+            "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR GITHUB TOKEN>", # DO NOT ADD IT TO YOUR COMMIT
+            "POSTGRESQL_HOSTING":"https://aws887.aws.com"
         }
     )
 
