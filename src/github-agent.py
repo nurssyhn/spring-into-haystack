@@ -14,6 +14,8 @@ github_mcp_server = StdioServerInfo(
 print("MCP server is created")
 
 ## TODO: Create your tools here:
+## Fix: Use GPT-4O NOT mini!!
+
 tool_1 = MCPTool(...
 
 tools = [## TODO: Add tools tool_1, tool_2, tool_3,..]
