@@ -11,6 +11,22 @@ github_mcp_server = StdioServerInfo(
         }
     )
 
+//github_mcp_server = StdioServerInfo(
+        ##Invoke MCP docker in here not IDE
+    command="docker",
+    args=[
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+    ],
+    env={
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "*******"
+    }
+)
+
 print("MCP server is created")
 
 ## TODO: Create your tools here:
